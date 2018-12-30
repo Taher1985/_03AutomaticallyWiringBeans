@@ -10,11 +10,12 @@
 
 	<bean id="compactDisk" class="_08_com.spring.wiringBeansWithXMLViaConsCollections._03CDPlayer">
 		<constructor-arg name="playerBrands">
-			<list>
+			<set>
 				<ref bean="samsung"/>
 				<ref bean="lg"/>
 				<ref bean="sony"/>
-			</list>
+				<ref bean="sony"/>
+			</set>
 		</constructor-arg>
 	</bean>
 
