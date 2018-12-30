@@ -33,7 +33,7 @@ public class _05CDPlayerConfig {
 	/* Injecting MediaPlayer into CompactDisk via constructor */
 	@Bean
 	public _01CompactDisk cdPlayerNeedsMediaPlayerViaCons(_02MediaPlayer mediaPlayer) {
-		_01CompactDisk cdmp = new _03CDPlayer(mediaPlayer);
+		_03CDPlayer cdmp = new _03CDPlayer(mediaPlayer);
 		return cdmp;
 	}
 	
