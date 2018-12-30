@@ -16,6 +16,10 @@ public class _03CDPlayer implements _01CompactDisk {
 		this.mediaPlayer = mediaPlayer;
 	}
 
+	public void setMediaPlayer(_02MediaPlayer mediaPlayer) {
+		this.mediaPlayer = mediaPlayer;
+	}
+
 	@Override
 	public void play() {
 		System.out.println("Playing CD with ");

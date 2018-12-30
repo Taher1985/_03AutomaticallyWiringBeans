@@ -10,7 +10,7 @@ public class _06Client {
 		context.register(_05CDPlayerConfig.class);
 		context.refresh();
 
-		_01CompactDisk compactDiskWithMediaPlayer = (_01CompactDisk) context.getBean("cdPlayerNeedsMediaPlayer");
+		_01CompactDisk compactDiskWithMediaPlayer = (_01CompactDisk) context.getBean("cdPlayerNeedsMediaPlayerViaSetter");
 		compactDiskWithMediaPlayer.play();
 
 		System.out.println();

@@ -22,9 +22,18 @@ public class _05CDPlayerConfig {
 		return am;
 	}
 
+	/* Injecting MediaPlayer into CompactDisk via setter method */
 	@Bean
-	public _01CompactDisk cdPlayerNeedsMediaPlayer() {
-		_01CompactDisk cdmp = new _03CDPlayer(mediaPlayer());
+	public _01CompactDisk cdPlayerNeedsMediaPlayerViaSetter() {
+		_03CDPlayer cdmp = new _03CDPlayer();
+		cdmp.setMediaPlayer(mediaPlayer());
+		return cdmp;
+	}
+	
+	/* Injecting MediaPlayer into CompactDisk via constructor */
+	@Bean
+	public _01CompactDisk cdPlayerNeedsMediaPlayerViaCons(_02MediaPlayer mediaPlayer) {
+		_01CompactDisk cdmp = new _03CDPlayer(mediaPlayer);
 		return cdmp;
 	}
 	
