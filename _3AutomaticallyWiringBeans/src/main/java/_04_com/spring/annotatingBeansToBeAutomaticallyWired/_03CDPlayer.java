@@ -31,4 +31,10 @@ public class _03CDPlayer implements _01CompactDisk {
 		mediaPlayerAudioTwo.playMediaPlayer();
 	}
 
+	@Autowired
+	public void autoWiredMethod(_02MediaPlayer mediaPlayer) {
+		System.out.println("Autowired Method");
+		System.out.println();
+	}
+
 }
